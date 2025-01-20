@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 import {
   DriversPage,
-  LabelsPage,
   LoginPage,
   LogisticPage,
   Orders,
@@ -48,14 +47,7 @@ const Routers = () => {
               </ProtectedRoute>
             }
           />
-          <Route
-            path="labels"
-            element={
-              <ProtectedRoute roles={["admin", "driver"]}>
-                <LabelsPage />
-              </ProtectedRoute>
-            }
-          />
+          
           <Route
             path="registerdriver"
             element={

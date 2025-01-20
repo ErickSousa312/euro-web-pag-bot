@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       const dataInsertLocalStorage = await new Promise(async (resolve) => {
         localStorage.setItem("token", token);
         const response = await axios.get(
-          `http://localhost:3000/api/v1/users/name/${email}`,
+          `http://localhost:3000/infoUser`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

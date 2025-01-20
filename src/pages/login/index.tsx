@@ -23,10 +23,10 @@ const LoginPage = () => {
     });
 
     try {
-      const response = await api.post(`/auth/login`, data);
+      const response = await api.post(`/login`, data);
       console.log(response);
       await login(response.data.access_token, data.userName);
-      if (response.status === 200) {
+      if (response.status === 201) {
         addToast({ type: "success", message: "Login realizado com sucesso!" });
         navigate("/orders");
       }

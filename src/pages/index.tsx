@@ -4,7 +4,6 @@ import RegisterClientPage from "./registerClient";
 import RegisterDriverPage from "./registerDriver";
 import DriversPage from "./drivers";
 import LogisticPage from "./logistic";
-import LabelsPage from "./labels";
 import Orders from "./orders";
 
 export {
@@ -14,6 +13,5 @@ export {
   RegisterDriverPage,
   DriversPage,
   LogisticPage,
-  LabelsPage,
   Orders,
 };
